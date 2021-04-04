@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Todos Todo Component matches snapshot 1`] = `
+<div
+  data-testid="todo-1"
+>
+  <strong>
+    Go to bed
+  </strong>
+</div>
+`;
