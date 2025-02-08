@@ -1,15 +1,21 @@
-import { describe, test, expect } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { render, screen, cleanup, fireEvent } from '@testing-library/react';
 import Counter from '../Counter';
 
 describe('Counter', () => {
-  test('renders count', () => {
+  beforeEach(() => {
     render(<Counter />);
+  });
+
+  afterEach(() => {
+    cleanup()
+  });
+
+  it('renders count', () => {
     expect(screen.getByText(/count: 0/i)).toBeInTheDocument();
   });
 
-  test('increments count when button is clicked', () => {
-    render(<Counter />);
+  it('increments count when button is clicked', () => {
     const button = screen.getByRole('button', { name: /increment/i });
     
     fireEvent.click(button);
