@@ -6,14 +6,9 @@ interface OwnProps {
   todo: todo
 }
 
-const Todo: React.FC<OwnProps> = (props: OwnProps) => {
+const Todo: React.FC<OwnProps> = ({ todo: { id, title, completed } }) => {
 
-  const { id, title, completed } = props.todo
-
-  
-  const text = completed 
-    ? <><strong>{title}</strong></>
-    : <>{title}</>
+  const text = completed ? <><strong>{title}</strong></> : <>{title}</>
 
   return (
     <div data-testid={`todo-${id}`}>

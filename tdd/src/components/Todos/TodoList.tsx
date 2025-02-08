@@ -17,7 +17,7 @@ const TodoList: React.FC<OwnProps> = () => {
       {
         myTodoList.map((todo) => {
           return (
-            <Todo key={todo.id} todo={todo}/>
+            <Todo key={todo.id} todo={todo} />
           )
         })
       }
