@@ -47,6 +47,10 @@ body {
   color: #333;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 /* Dark Mode Support */
 @media (prefers-color-scheme: dark) {
   body {

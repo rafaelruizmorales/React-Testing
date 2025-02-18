@@ -18,6 +18,7 @@ export default defineConfig({
         'src/mocks/**',        // Ignore mock files
         'src/store/**',        // Ignore Redux store
         'src/main.tsx',        // Ignore main entry point
+        'src/components/**/model.tsx', // Ignore model files
         'src/vite-env.d.ts',   // Ignore TypeScript environment types
         'src/setupTests.ts',   // Ignore Jest/Vitest setup file
         'src/utils/logger.ts', // Ignore a specific utility file

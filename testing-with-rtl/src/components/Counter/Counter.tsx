@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
 export default function Counter() {
-  const [count, setCount] = useState(0);
+  const initialCountState = 0
+  const [count, setCount] = useState(initialCountState);
 
   return (
     <div>
